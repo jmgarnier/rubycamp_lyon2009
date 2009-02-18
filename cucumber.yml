@@ -1,0 +1,3 @@
+default: --language fr --color -r features/support/env_console.rb -r features/step_definitions/addition_steps.rb features/console
+developing_selenium: --language fr -r features/support/env_selenium.rb -r features/step_definitions features/ajax features/plain
+selenium: --language fr -r features/support/env_selenium.rb -r features/step_definitions features/ajax features/plain
