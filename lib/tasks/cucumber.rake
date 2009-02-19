@@ -1,7 +1,13 @@
 $:.unshift(RAILS_ROOT + '/vendor/plugins/cucumber/lib')
 require 'cucumber/rake/task'
 
-Cucumber::Rake::Task.new(:features) do |t|
-  t.cucumber_opts = "--format pretty --language fr"
+# Does not work! load all the steps!
+Cucumber::Rake::Task.new(:features_console) do |t|
+  t.cucumber_opts = "-p default"
 end
-task :features => 'db:test:prepare'
+
+Cucumber::Rake::Task.new(:features_rails_session) do |t|
+  t.cucumber_opts = "--profile webrat_rails_session"
+end
+task :features_rails_session => 'db:test:prepare'
+

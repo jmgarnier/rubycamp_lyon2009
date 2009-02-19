@@ -6,13 +6,3 @@ require 'cucumber/formatters/unicode' # Comment out this line if you don't want 
 
 # Comment out the next two lines if you're not using RSpec's matchers (should / should_not) in your steps.
 require 'cucumber/rails/rspec'
-
-# Active Record Model
-
-Before do
-  @calc = Calculatrice.new
-end
-
-After do
-end
-

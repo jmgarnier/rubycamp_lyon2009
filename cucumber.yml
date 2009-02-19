@@ -1,3 +1,4 @@
-default: --language fr --color -r features/support/env_console.rb -r features/step_definitions/addition_steps.rb features/console
-developing_selenium: --language fr -r features/support/env_selenium.rb -r features/step_definitions features/ajax features/plain
-selenium: --language fr -r features/support/env_selenium.rb -r features/step_definitions features/ajax features/plain
+default: --language fr --color -r features/support/env_console.rb -r features/step_definitions_console features/additions.feature
+webrat_rails_session: --language fr --color -r features/support/env_rails.rb -r features/step_definitions_rails features/additions.feature
+developing_selenium: --language fr -r features/support/env_developing_selenium.rb -r features/step_definitions features/additions.feature
+selenium: --language fr -r features/support/env_selenium.rb -r features/step_definitions features/additions.feature
