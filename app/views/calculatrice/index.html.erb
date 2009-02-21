@@ -1,0 +1,16 @@
+<h1>Calculatrice: Addition de deux nombres</h1>
+
+<% form_for :calculatrice, :url => { :action => "calculer" } do |f| %>
+
+  <label>Premier nombre<%= f.text_field :a, :size => 2, :id => "a" -%></label>
+
+  <br/>+<br/>
+  
+  <label>Deuxième nombre<%= f.text_field :b, :size => 2, :id => "b" -%></label>
+
+  <%= submit_tag '='%>
+
+<% end %>
+
+
+
