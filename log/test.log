@@ -1319,3 +1319,40 @@ Processing CalculatriceController#calculer (for 127.0.0.1 at 2009-02-19 13:56:49
 Rendering template within layouts/application
 Rendering calculatrice/calculer
 Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/calculatrice/calculer]
+REQUESTING PAGE: GET /calculatrice with {} and HTTP headers {}
+
+
+Processing CalculatriceController#index (for 127.0.0.1 at 2009-02-19 17:16:08) [GET]
+Rendering template within layouts/application
+Rendering calculatrice/index
+Completed in 125ms (View: 113, DB: 0) | 200 OK [http://www.example.com/calculatrice]
+REQUESTING PAGE: GET /calculatrice with {} and HTTP headers {}
+
+
+Processing CalculatriceController#index (for 127.0.0.1 at 2009-02-19 17:16:37) [GET]
+Rendering template within layouts/application
+Rendering calculatrice/index
+Completed in 64ms (View: 57, DB: 0) | 200 OK [http://www.example.com/calculatrice]
+REQUESTING PAGE: POST /calculatrice/calculer with {"commit"=>"=", "calculatrice"=>{"a"=>"1", "b"=>"1"}} and HTTP headers {"HTTP_REFERER"=>"/calculatrice"}
+
+
+Processing CalculatriceController#calculer (for 127.0.0.1 at 2009-02-19 17:16:38) [POST]
+  Parameters: {"commit"=>"=", "calculatrice"=>{"a"=>"1", "b"=>"1"}}
+Rendering template within layouts/application
+Rendering calculatrice/calculer
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/calculatrice/calculer]
+REQUESTING PAGE: GET /calculatrice with {} and HTTP headers {}
+
+
+Processing CalculatriceController#index (for 127.0.0.1 at 2009-02-19 17:19:06) [GET]
+Rendering template within layouts/application
+Rendering calculatrice/index
+Completed in 66ms (View: 59, DB: 0) | 200 OK [http://www.example.com/calculatrice]
+REQUESTING PAGE: POST /calculatrice/calculer with {"commit"=>"=", "calculatrice"=>{"a"=>"1", "b"=>"1"}} and HTTP headers {"HTTP_REFERER"=>"/calculatrice"}
+
+
+Processing CalculatriceController#calculer (for 127.0.0.1 at 2009-02-19 17:19:06) [POST]
+  Parameters: {"commit"=>"=", "calculatrice"=>{"a"=>"1", "b"=>"1"}}
+Rendering template within layouts/application
+Rendering calculatrice/calculer
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/calculatrice/calculer]

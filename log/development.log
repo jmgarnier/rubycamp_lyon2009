@@ -628,3 +628,16 @@ Processing CalculatriceController#calculer (for 127.0.0.1 at 2009-02-19 13:47:56
 Rendering template within layouts/application
 Rendering calculatrice/calculer
 Completed in 27ms (View: 10, DB: 0) | 200 OK [http://localhost/calculatrice/calculer]
+
+
+Processing CalculatriceController#index (for 127.0.0.1 at 2009-02-19 17:08:05) [GET]
+Rendering template within layouts/application
+Rendering calculatrice/index
+Completed in 36ms (View: 21, DB: 0) | 200 OK [http://localhost/calculatrice/]
+
+
+Processing CalculatriceController#calculer (for 127.0.0.1 at 2009-02-19 17:08:23) [POST]
+  Parameters: {"commit"=>"=", "calculatrice"=>{"a"=>"1", "b"=>"2"}, "authenticity_token"=>"OZzsC1YUOwwge5AvwDDBgbPxcXsiVbuHsuklZKlmHo0="}
+Rendering template within layouts/application
+Rendering calculatrice/calculer
+Completed in 30ms (View: 14, DB: 0) | 200 OK [http://localhost/calculatrice/calculer]
