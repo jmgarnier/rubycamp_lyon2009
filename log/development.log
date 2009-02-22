@@ -641,3 +641,66 @@ Processing CalculatriceController#calculer (for 127.0.0.1 at 2009-02-19 17:08:23
 Rendering template within layouts/application
 Rendering calculatrice/calculer
 Completed in 30ms (View: 14, DB: 0) | 200 OK [http://localhost/calculatrice/calculer]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCalculatrices (20090218161430)
+Migrating to CreateBowlings (20090221150553)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (4.8ms)[0m   [0mCREATE TABLE "bowlings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "score" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090221150553')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("bowlings")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("calculatrices")[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (6.2ms)[0m   [0;1mCREATE TABLE "bowlings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "score" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCREATE TABLE "calculatrices" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "a" integer, "b" integer, "operator" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (3.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090221150553')[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090218161430')[0m
+
+
+Processing CalculatriceController#index (for 127.0.0.1 at 2009-02-21 17:11:49) [GET]
+Rendering template within layouts/application
+Rendering calculatrice/index
+Completed in 23ms (View: 14, DB: 0) | 200 OK [http://localhost/calculatrice]
+
+
+Processing CalculatriceController#calculer (for 127.0.0.1 at 2009-02-21 17:12:05) [POST]
+  Parameters: {"commit"=>"=", "calculatrice"=>{"a"=>"11", "b"=>"1"}, "authenticity_token"=>"OZzsC1YUOwwge5AvwDDBgbPxcXsiVbuHsuklZKlmHo0="}
+Rendering template within layouts/application
+Rendering calculatrice/calculer
+Completed in 24ms (View: 8, DB: 0) | 200 OK [http://localhost/calculatrice/calculer]

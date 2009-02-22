@@ -1356,3 +1356,33 @@ Processing CalculatriceController#calculer (for 127.0.0.1 at 2009-02-19 17:19:06
 Rendering template within layouts/application
 Rendering calculatrice/calculer
 Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/calculatrice/calculer]
+REQUESTING PAGE: GET /calculatrice with {} and HTTP headers {}
+
+
+Processing CalculatriceController#index (for 127.0.0.1 at 2009-02-21 16:24:07) [GET]
+Rendering template within layouts/application
+Rendering calculatrice/index
+Completed in 72ms (View: 65, DB: 0) | 200 OK [http://www.example.com/calculatrice]
+REQUESTING PAGE: POST /calculatrice/calculer with {"commit"=>"=", "calculatrice"=>{"a"=>"1", "b"=>"1"}} and HTTP headers {"HTTP_REFERER"=>"/calculatrice"}
+
+
+Processing CalculatriceController#calculer (for 127.0.0.1 at 2009-02-21 16:24:07) [POST]
+  Parameters: {"commit"=>"=", "calculatrice"=>{"a"=>"1", "b"=>"1"}}
+Rendering template within layouts/application
+Rendering calculatrice/calculer
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/calculatrice/calculer]
+REQUESTING PAGE: GET /calculatrice with {} and HTTP headers {}
+
+
+Processing CalculatriceController#index (for 127.0.0.1 at 2009-02-21 17:13:25) [GET]
+Rendering template within layouts/application
+Rendering calculatrice/index
+Completed in 63ms (View: 56, DB: 0) | 200 OK [http://www.example.com/calculatrice]
+REQUESTING PAGE: POST /calculatrice/calculer with {"commit"=>"=", "calculatrice"=>{"a"=>"1", "b"=>"1"}} and HTTP headers {"HTTP_REFERER"=>"/calculatrice"}
+
+
+Processing CalculatriceController#calculer (for 127.0.0.1 at 2009-02-21 17:13:26) [POST]
+  Parameters: {"commit"=>"=", "calculatrice"=>{"a"=>"1", "b"=>"1"}}
+Rendering template within layouts/application
+Rendering calculatrice/calculer
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/calculatrice/calculer]
